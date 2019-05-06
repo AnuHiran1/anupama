@@ -1,0 +1,15 @@
+---
+ - name: play1
+   hosts: webserver
+   vars_prompt:
+    name: var1
+	prompt: Enter any value ?
+   tasks:
+  - name: Variable value
+    debug:
+     msg: "The value of variable is : {{var1}}"	
+     
+     
+     i-0847b487f3a3c8d29
+     
+     https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
