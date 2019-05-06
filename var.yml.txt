@@ -1,0 +1,10 @@
+---
+ - name: play1
+   hosts: webserver
+   vars_prompt:
+    name: var1
+	prompt: Enter any value ?
+   tasks:
+  - name: Variable value
+    debug:
+     msg: "The value of variable is : {{var1}}"	
